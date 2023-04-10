@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --font-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(12, 96%, 49%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* line-height: 1.6; */
+}
+
+header {
+  background-image: url(../img/22.jpg);
+  height: 91vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: rgb(255, 0, 0);
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.685);
+  font-weight: 900;
+  font-size: 5rem;
+}
+header p{
+  color: white;
+  font-weight: 900;
+  font-size: 5rem;
+  text-shadow: 5px 5px 3px black;
+}
+
+nav {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10%;
+}
+
+nav img {
+  width: 7rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-left: 40px;
+  position: relative;
+  transition: all 0.3s;
+}
+ul li a:hover {
+  color: black;
+}
+ul li a::before {
+  content: "";
+  display: inline-block;
+  background-color: black;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  transform: scale(0, 1);
+  transition: all 0.3s;
+}
+ul li a:hover::before {
+  transform: scale(1, 1);
+}
+
+#menu {
+  z-index: 4;
+  width: 3rem;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  display: none;
+}
+.social {
+  padding-left: 1rem;
+  width: 100%;
+  max-width: 4rem;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  filter: brightness(1%);
+}
+
+ul img:first-child {
+  display: none;
+}
+span img {
+  display: none;
+}
+@media screen and (max-width: 937px) {
+  #menu {
+    display: block;
+  }
+  ul {
+    position: absolute;
+    background-color: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    transition: transform 0.5s ease;
+  }
+  ul li {
+    margin-top: 3rem;
+  }
+  ul li a {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0;
+  }
+  ul.active {
+    transform: translateY(100%);
+  }
+  ul img:first-child {
+    width: 10rem;
+    display: inline;
+  }
+  span {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span img {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    max-width: 4rem;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    filter: brightness(1%);
+  }
+  .social {
+    display: none;
+  }
+  header h1{
+    font-size: 11vw;
+  }
+  header p{
+    font-size: 9vw;
+  }
+}
+
+/* .wrapper img {
+  position: absolute;
+  top: 1rem;
+  width: 6rem;
+}
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: hsl(0, 0%, 15%);
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper ul li a {
+  color: hsl(29, 100%, 65%);
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper ul {
+  display: flex;
+}
+.wrapper ul li {
+  padding: 1rem;
+}
+#hamburger img {
+  display: none;
+}
+#mobileLogo {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper ul {
+    z-index: 1;
+    background-color: indigo;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    top: -100%;
+    left: 0;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .wrapper ul.active {
+    transform: translateY(100%);
+  }
+
+ 
+  .wrapper ul li {
+    padding: 2rem 1rem;
+  }
+  #hamburger img {
+    padding: .5rem 0;
+    position: relative;
+    width: 3rem;
+    top: 0;
+    z-index: 2;
+    display: block;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+  }
+  .wrapper {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  #mobileLogo {
+    width: 100%;
+  max-width: 350px;
+    position: relative;
+    margin: 6rem 0;
+    display: block;
+  }
+} */
