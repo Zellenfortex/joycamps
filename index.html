@@ -8,48 +8,112 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="icon" href="img/logo_small-circle.png" type="image/icon type" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/IndexStyle.css" />
+
+    <!-- Global Style -->
+    <link rel="stylesheet" href="globalStyle/nav.css" />
+    <link rel="stylesheet" href="globalStyle/mediaQuery.css" />
+
+    <!-- icon -->
+    <link rel="icon" href="img/logo_small-circle.png" type="image/icon type" />
+
+    <!-- Script -->
     <script defer src="/_vercel/insights/script.js"></script>
     <script async defer src="script.js"></script>
+
     <title>JoyCamps Romania</title>
   </head>
+
   <body>
     <nav>
       <a href="index.html"
-        ><img src="img/logo_small-circle.png" alt="logo" />
+        ><img src="svg/logo_small-circle.png" alt="logo" />
       </a>
-      <img id="menu" src="img/7124209_menu_icon.svg" alt="" />
+      <div class="hamburger" id="btn">
+        <div class="top-line"></div>
+        <div class="middle-line"></div>
+        <div class="bottom-line"></div>
+      </div>
       <ul>
-        <img src="img/logo_small-circle.png" alt="logo" />
-        <li><a href="#">Home</a></li>
+        <img src="svg/logo_small-circle.png" alt="logo" />
+
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Contact</a></li>
-        <img class="social" src="img/icons8-facebook (1).svg" alt="fb" />
-        <img class="social" src="img/instagram.svg" alt="fb" />
-        <img class="social" src="img/youtube.svg" alt="fb" />
-        <img class="social" src="img/tiktok (1).svg" alt="fb" />
+        <img class="social" src="svg/facebook.svg" alt="Facebook-logo" />
+        <img class="social" src="svg/instagram.svg" alt="Instagram-logo" />
+        <img class="social" src="svg/youtube.svg" alt="Youtube-logo" />
+        <img class="social" src="svg/tiktok.svg" alt="Tiktok-logo" />
         <span>
-          <img src="img/icons8-facebook (1).svg" alt="fb" />
-          <img src="img/instagram.svg" alt="fb" />
-          <img src="img/youtube.svg" alt="fb" />
-          <img src="img/tiktok (1).svg" alt="fb" />
+          <img src="svg/facebook.svg" alt="Facebook-logo" />
+          <img src="svg/instagram.svg" alt="Instagram-logo" />
+          <img src="svg/youtube.svg" alt="Youtube-logo" />
+          <img src="svg/tiktok.svg" alt="Tiktok-logo" />
         </span>
       </ul>
     </nav>
-    <header>
-      <h1>WELCOME</h1>
-      <p>JoyCamps Romania</p>
-    </header>
 
+    <header>
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          <img src="svg/arrow-64.svg" alt="a" />
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          <img src="svg/arrow-25.svg" alt="a" />
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="images/22.jpg" alt="img" />
+          </li>
+          <li class="slide">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape"
+              alt="img"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="https://source.unsplash.com/random/1920x1080/?landscape"
+              alt="img"
+            />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse est itaque
+      cumque similique doloribus quisquam, dicta eos assumenda velit iure nobis
+      fugiat laudantium ea ratione mollitia, nostrum enim excepturi inventore.
+      Quisquam cum et sequi, dicta iste deleniti nostrum unde error mollitia
+      veniam distinctio recusandae enim natus debitis fugiat commodi similique
+      officiis voluptatum! Aut, dolorum minus. Libero non cum magnam inventore.
+      Eligendi ipsa neque aspernatur delectus, fugiat cum, doloremque fugit odit
+      eos beatae debitis totam optio dolores, sit deleniti molestias officiis
+      blanditiis commodi! Ea iure repellat consequatur commodi beatae tempora
+      culpa. Impedit voluptate hic repudiandae sed amet esse a nesciunt illo
+      harum, corporis voluptatem molestiae ut unde quam eum eligendi quia
+      beatae! Illo id deleniti corrupti nobis labore! Ipsam, nostrum placeat.
+      Illum exercitationem voluptatem praesentium fugit, maiores minus quam
+      vitae similique quis, ullam repellendus nisi. Possimus atque, vel magnam
+      sit autem voluptate dicta temporibus quasi veniam aspernatur incidunt iste
+      illo perspiciatis. Harum doloremque tenetur placeat sapiente provident,
+      fugit cumque deleniti vero laborum alias nemo, maiores necessitatibus.
+      Optio quae eos illo incidunt quas amet exercitationem pariatur accusantium
+      quo repellat? Quasi, iste maxime.
+    </h1>
+    <!-- <header>
+        <h1>WELCOME</h1>
+        <p>JoyCamps Romania</p>
+      </header> -->
+    <!-- </div> -->
+    <!-- <div class="ceva"></div> -->
     <!-- <nav>
       <div class="wrapper">
         <a href="index.html"
