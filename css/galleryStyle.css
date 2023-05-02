@@ -2,4 +2,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallery::after {
+  content: "";
+  width: 450px;
+}
 
