@@ -17,6 +17,61 @@ body {
   background: #cccccc;
 }
 
+/* SIDE NAV */
+
+#sidenav {
+  position: fixed;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 12px;
+  border-radius: 0 15px 15px 0;
+  bottom: 20px;
+  left: -125px;
+  width: 170px;
+  font-size: 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+#sidenav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+#sidenav a:hover{
+  color: rgb(226, 226, 226);
+}
+#sidenav:hover {
+  left: 0;
+}
+/* #sidenav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+#sidenav a {
+  position: fixed;
+  left: -120px;
+  padding: 15px;
+  width: 170px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  transition: 0.3s;
+  
+}
+#sidenav a:hover {
+  left: 0;
+}
+#call {
+  z-index: 99;
+  bottom: 2rem;
+  background-color: black;
+} */
 /* HEADER - Carousel imgs */
 
 .carousel {
@@ -82,6 +137,9 @@ body {
   font-weight: 800;
   font-size: 5rem;
   text-transform: uppercase;
+  color: #231557;
+}
+.firstSection span {
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -90,7 +148,6 @@ body {
     #f97d1c 100%
   );
   background-size: 200% auto;
-  color: #000000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -177,6 +234,8 @@ body {
     font-weight: 800;
   }
 }
+
+/* REAVEAL SECTIONS */
 
 .reveal {
   position: relative;

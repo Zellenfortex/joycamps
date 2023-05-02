@@ -31,13 +31,13 @@
     width: 10rem;
     display: inline;
   }
-  span {
+  nav span {
     margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  span a {
+  nav span a {
     display: block;
     padding: 0rem 1rem;
     font-size: 2rem;
