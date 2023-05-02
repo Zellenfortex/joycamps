@@ -2,6 +2,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+header h1 {
+  text-align: center;
+margin: 2rem 0;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
@@ -26,4 +31,3 @@ body {
   content: "";
   width: 450px;
 }
-
