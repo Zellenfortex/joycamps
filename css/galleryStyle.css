@@ -113,9 +113,7 @@ hr {
   .img-wrapper .content.fade {
     opacity: 1;
   }
-  .img-wrapper img.blur {
-    filter: blur(1px);
-  }
+  
   .content {
     font-size: 2rem;
   }
