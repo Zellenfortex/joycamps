@@ -1,19 +1,32 @@
 body {
   font-family: "Poppins", sans-serif;
+  background: rgb(245, 53, 5);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 53, 5, 1) 0%,
+    rgba(245, 53, 5, 1) 50%,
+    rgba(152, 33, 3, 1) 76%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
-
 header h1 {
+  color: white;
+  font-weight: 500;
   text-align: center;
-margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  margin: 4rem 0;
 }
-
-.gallery {
+hr {
+  border-top: 1px solid white;
+  margin-bottom: 2rem;
+}
+/* .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 17px;
+  gap: 20px;
   max-width: 1500px;
   margin: 0 auto;
   padding: 20px 10px;
@@ -30,4 +43,90 @@ margin: 2rem 0;
 .gallery::after {
   content: "";
   width: 450px;
+} */
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.img-wrapper img {
+  display: block;
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+/* Text content */
+.content {
+  position: absolute;
+  inset: 0;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white; */
+  font-size: 3rem;
+  background: rgba(189, 189, 189, 0.348);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper img,
+.content {
+  transition: 200ms ease-in-out;
+}
+
+/* IMG blur and zoom */
+.img-wrapper:hover img.blur {
+  filter: blur(1px);
+}
+.img-wrapper:hover img.zoom {
+  transform: scale(1.03);
+}
+
+/* Fade text */
+.img-wrapper .content.fade {
+  opacity: 0;
+}
+.img-wrapper:hover .content.fade {
+  opacity: 1;
+}
+
+/* @media for imgs */
+@media screen and (max-width: 937px) {
+  .img-wrapper .content.fade {
+    opacity: 1;
+  }
+  .img-wrapper img.blur {
+    filter: blur(1px);
+  }
+  .content {
+    font-size: 2rem;
+  }
+}
+/* .gallery p {
+  
+  text-align: center;
+  
+  z-index: 999;
+} */
+/* .gallery img:hover {
+  transform: scale(1.01);
+  filter: blur(0.8px);
+} */
