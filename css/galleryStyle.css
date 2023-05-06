@@ -88,6 +88,7 @@ hr {
   object-fit: cover;
   object-position: center;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 /* Text content */
@@ -110,14 +111,17 @@ hr {
 .img-wrapper img,
 .content {
   transition: 200ms ease-in-out;
+  
 }
 
 /* IMG blur and zoom */
 .img-wrapper:hover img.blur {
   filter: blur(1px);
+  
 }
 .img-wrapper:hover img.zoom {
   transform: scale(1.03);
+  
 }
 
 /* Fade text */
@@ -126,6 +130,7 @@ hr {
 }
 .img-wrapper:hover .content.fade {
   opacity: 1;
+  
 }
 
 /* @media for imgs */
