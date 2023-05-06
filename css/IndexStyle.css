@@ -204,7 +204,6 @@ body {
 .wrapper {
   margin-top: 7rem;
   width: 100%;
-  height: 30rem;
   background: rgb(248, 87, 43);
   text-align: center;
   color: white;
@@ -217,8 +216,8 @@ body {
   text-transform: uppercase;
 }
 .wrapper p {
-  font-size: 1rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  padding: 2rem 0;
 }
 
 @media screen and (max-width: 650px) {
@@ -232,6 +231,9 @@ body {
   .firstSection h2 {
     font-size: 2.4rem;
     font-weight: 800;
+  }
+  .wrapper p {
+    font-size: 1.2rem;
   }
 }
 
