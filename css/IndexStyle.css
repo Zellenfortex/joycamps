@@ -217,8 +217,16 @@ body {
   text-transform: uppercase;
 }
 .wrapper p {
+  font-weight: 500;
   font-size: 1.4rem;
   padding: 2rem 0;
+}
+.wrapper-p > span{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #393646;
+  background-color: rgba(255, 255, 255, 0.755);
+  border-radius: 15px 0 15px 0;
 }
 #video-fb {
   margin: 0 auto;

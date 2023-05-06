@@ -70,6 +70,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   padding: 20px 10px;
+  margin-bottom: 5rem;
 }
 
 .img-wrapper {
@@ -104,7 +105,10 @@ body {
   align-items: center;
   text-align: center;
 }
-
+.content > p{
+  background-color: rgba(0, 0, 0, 0.299);
+  border-radius: 20px;
+}
 .img-wrapper img,
 .content {
   transition: 200ms ease-in-out;
