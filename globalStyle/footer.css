@@ -18,6 +18,7 @@ footer {
 .contact-footer p {
   border-bottom: 1px solid gray;
 }
+
 .links > a,
 .contact-footer > a {
   text-decoration: none;
