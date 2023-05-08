@@ -1,3 +1,5 @@
+/* FOR MOBILE NAVBAR (HAMBURGER) */
+
 @media screen and (max-width: 937px) {
   .hamburger {
     display: block;
@@ -44,5 +46,19 @@
   }
   .social {
     display: none;
+  }
+}
+
+/* FOR SMALL Phones in HEIGHT */
+
+@media screen and (max-height: 650px) {
+  nav span {
+    margin-top: 2rem;
+  }
+  nav ul img:first-child {
+    width: 8rem;
+  }
+  nav ul li {
+    margin-top: 2rem;
   }
 }

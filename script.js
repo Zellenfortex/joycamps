@@ -66,9 +66,38 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+//
+// const questions = document.querySelectorAll('.questions');
+// const texts = document.querySelectorAll('.text');
+
+// for (let i = 0; i < questions.length; i++) {
+//   questions[i].addEventListener('click', function() {
+//     for (let j = 0; j < texts.length; j++) {
+//       if (texts[j].id === `text-${i + 1}`) {
+//         if (texts[j].style.display === 'block') {
+//           texts[j].style.display = 'none';
+//         } else {
+//           texts[j].style.display = 'block';
+//           texts[j].classList.add('animate__animated', 'animate__fadeIn');
+//         }
+//       } else {
+//         texts[j].style.display = 'none';
+//       }
+//     }
+//   });
+// }
+
+const faqs = document.querySelectorAll(".faq");
 
 
 
-// 
-
-
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faqs.forEach((otherFaq) => {
+      if (otherFaq !== faq) {
+        otherFaq.classList.remove("active-fq");
+      }
+    });
+    faq.classList.toggle("active-fq");
+  });
+});
