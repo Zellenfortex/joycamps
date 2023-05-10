@@ -1,4 +1,4 @@
-// Carousel img - header
+// !Carousel img - header
 const buttons = document.querySelectorAll("[data-carousel-button]");
 const nextButton = document.querySelector("[data-carousel-button='next']");
 let intervalId;
@@ -24,13 +24,13 @@ buttons.forEach((button) => {
   });
 });
 
-// Auto Swipe
+// * Auto Swipe
 function autoSwipe() {
   nextButton.click();
 }
 intervalId = setInterval(autoSwipe, 3500); // start first interval
 
-// Hamburger animation active
+// * Hamburger animation active
 
 const hamburger = document.querySelector(".hamburger");
 const layers = document.querySelectorAll(".hamburger div");
@@ -39,7 +39,7 @@ hamburger.addEventListener("click", () => {
   layers.forEach((layers) => layers.classList.toggle("activeHamburger"));
 });
 
-// Toggle Mobile Menu
+// * Toggle Mobile Menu
 
 const nav = document.querySelector("nav ul");
 const btn = document.getElementById("btn");
@@ -48,8 +48,7 @@ btn.addEventListener("click", () => {
   nav.classList.toggle("MobileMenu");
 });
 
-// REVEAL
-
+// ! REVEAL
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
@@ -63,41 +62,27 @@ function reveal() {
     }
   }
 }
-
 window.addEventListener("scroll", reveal);
 
-//
-// const questions = document.querySelectorAll('.questions');
-// const texts = document.querySelectorAll('.text');
-
-// for (let i = 0; i < questions.length; i++) {
-//   questions[i].addEventListener('click', function() {
-//     for (let j = 0; j < texts.length; j++) {
-//       if (texts[j].id === `text-${i + 1}`) {
-//         if (texts[j].style.display === 'block') {
-//           texts[j].style.display = 'none';
-//         } else {
-//           texts[j].style.display = 'block';
-//           texts[j].classList.add('animate__animated', 'animate__fadeIn');
-//         }
-//       } else {
-//         texts[j].style.display = 'none';
-//       }
-//     }
-//   });
-// }
-
+// ?Accordion Q/A
 const faqs = document.querySelectorAll(".faq");
 
-
-
 faqs.forEach((faq) => {
+  const icon = faq.querySelector(".fa-solid.fa-plus");
+
   faq.addEventListener("click", () => {
     faqs.forEach((otherFaq) => {
       if (otherFaq !== faq) {
         otherFaq.classList.remove("active-fq");
+        const otherIcon = otherFaq.querySelector(".fa-solid.fa-minus");
+        if (otherIcon) {
+          otherIcon.classList.toggle("fa-plus");
+          otherIcon.classList.toggle("fa-minus");
+        }
       }
     });
     faq.classList.toggle("active-fq");
+    icon.classList.toggle("fa-plus");
+    icon.classList.toggle("fa-minus");
   });
 });

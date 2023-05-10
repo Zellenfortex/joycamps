@@ -216,11 +216,14 @@ body {
   padding-top: 4rem;
   text-transform: uppercase;
 }
-.wrapper p {
+.wrapper-p {
   font-weight: 500;
   font-size: 1.4rem;
   padding: 2rem 0;
   margin: 0 6%;
+}
+.wrapper-p:last-child{
+  padding-bottom: 3rem;
 }
 .wrapper-p > span {
   font-size: 1.6rem;
@@ -249,16 +252,20 @@ body {
     font-weight: 800;
   }
 }
-/* QUESTIONS DIV */
 
+/* * QUESTIONS DIV */
 
 .section3 h1 {
-  padding: 2rem 0;
+  padding: 3rem 0.5rem 2rem 0.5rem;
   text-align: center;
 }
+/* container for q/a */
 .faq {
-  width: clamp(350px, 50%, 900px);
+  width: clamp(300px, 70%, 900px);
   margin: 0 auto;
+}
+.faq:last-child {
+  margin-bottom: 4rem;
 }
 .questions {
   display: flex;
@@ -268,27 +275,34 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 .questions:hover {
   color: var(--bg-color);
 }
 .questions:hover i {
   background: var(--bg-color);
 }
+
 .questions i {
   background: black;
   color: white;
   padding: 5px;
-  border-radius: 50%;
+  border-radius: 0 20px 20px 20px;
   margin-right: 1rem;
 }
-.answer{
+.answer {
+  color: rgba(27, 27, 27, 0.74);
+  font-weight: 500;
+  font-size: 1.0rem;
+  padding-top: 0.7rem;
+  padding-left: 1rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
-.faq.active-fq .answer{
+.faq.active-fq .answer {
   max-height: 350px;
-  animation: fade .4s ease-in-out;
+  animation: fade 0.4s ease-in-out;
 }
 
 @keyframes fade {
@@ -302,22 +316,12 @@ body {
   }
 }
 
-
 .hr {
   margin: 0.5rem 0;
-  border: 1px solid red;
-}
-.last{
-  margin-bottom: 4rem;
+  border: 1px solid rgb(228, 228, 228);
 }
 
-
-
-
-
-
-
-/* REAVEAL SECTIONS */
+/* * REAVEAL SECTIONS */
 
 .reveal {
   position: relative;
