@@ -50,6 +50,7 @@ btn.addEventListener("click", () => {
 });
 
 // ! REVEAL
+
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
