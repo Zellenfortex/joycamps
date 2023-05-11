@@ -46,6 +46,7 @@ const btn = document.getElementById("btn");
 
 btn.addEventListener("click", () => {
   nav.classList.toggle("MobileMenu");
+  document.body.style.overflow = nav.classList.contains("MobileMenu") ? "hidden" : "auto";
 });
 
 // ! REVEAL
