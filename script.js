@@ -88,3 +88,5 @@ faqs.forEach((faq) => {
     icon.classList.toggle("fa-minus");
   });
 });
+
+
