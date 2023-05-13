@@ -106,24 +106,21 @@ body {
   align-items: center;
   text-align: center;
 }
-.content > p{
+.content > p {
   background-color: rgba(0, 0, 0, 0.299);
   border-radius: 20px;
 }
 .img-wrapper img,
 .content {
   transition: 200ms ease-in-out;
-  
 }
 
 /* IMG blur and zoom */
 .img-wrapper:hover img.blur {
   filter: blur(1px);
-  
 }
 .img-wrapper:hover img.zoom {
   transform: scale(1.03);
-  
 }
 
 /* Fade text */
@@ -132,7 +129,6 @@ body {
 }
 .img-wrapper:hover .content.fade {
   opacity: 1;
-  
 }
 
 /* @media for imgs */
@@ -146,13 +142,8 @@ body {
     background: rgba(255, 166, 0, 0.148);
   }
 }
-/* .gallery p {
-  
-  text-align: center;
-  
-  z-index: 999;
-} */
-/* .gallery img:hover {
-  transform: scale(1.01);
-  filter: blur(0.8px);
-} */
+@media (max-width: 400px){
+  .content {
+    font-size: 1.3rem;
+  }
+}
